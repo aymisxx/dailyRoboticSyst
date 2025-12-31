@@ -24,7 +24,6 @@ Each folder corresponds to **one day**.
 ```
 dayXX/
 ├── README.md        # what I tried, what I learned, what broke
-├── derivations.md   # math, assumptions, equations (if any)
 ├── demo.py          # minimal runnable code or simulation (optional)
 └── notebook.ipynb   # main learning artifact with explanations + code
 ```
@@ -84,8 +83,5 @@ By the end of this arc, this repo should reflect:
 - control-first intuition
 - comfort with uncertainty and failure
 - the habit of building, not just reading
-
-Robotics is a long game.  
-This repo is one small, consistent step into it.
 
 ---
