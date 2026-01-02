@@ -49,15 +49,9 @@ All computations are done numerically, reflecting how real simulators and contro
 
 ## Mathematical Form (Minimal)
 
-Numerical derivative (conceptual):
-$$
-dx/dt ≈ (x[k+1] − x[k]) / Δt
-$$
+Numerical derivative (conceptual): $dx/dt ≈ (x[k+1] − x[k]) / Δt$
 
-Euler integration:
-$$
-x[k+1] = x[k] + x_dot[k] · Δt
-$$
+Euler integration: $x[k+1] = x[k] + x_dot[k] · Δt$
 
 ## Files
 
