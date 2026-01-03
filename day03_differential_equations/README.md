@@ -1,93 +1,107 @@
-# Day 02: Calculus for Dynamics (Numerical)
+# Day 03: Differential Equations  
+### Dynamics as Time-Evolving Memory
 
 ---
 
-**Theme:** Change is the language of dynamical systems.
+## Objective
 
-The goal of this day is to build **intuition-first understanding** of calculus as it appears in control and robotics, not as symbolic math, but as **numerical operations that drive simulations**.
+The goal of Day 03 is to understand **how systems evolve over time** using
+**ordinary differential equations (ODEs)** and to simulate them numerically.
 
-## Core Ideas
+This day marks the transition from:
 
-### 1. Derivative = Rate of Change
-A derivative answers a simple system-level question:
+- **static system descriptions** to  
+- **dynamic, time-evolving behavior**
 
-> “How fast is the state changing right now?”
+## Core Idea
 
-In physical and control systems:
-- Position → velocity
-- Velocity → acceleration
-- State → state-rate
+A differential equation defines **how a system’s state changes with time**.
 
-Derivatives react **instantly** to changes and amplify fast variations.  
-This is why derivative terms are powerful but sensitive to noise.
+If the state is known at the current instant,  
+the differential equation tells us how the future unfolds.
 
-### 2. Integral = Accumulation / Memory
-An integral answers a different question:
+> Differential equations are not abstract math, they are **time-unfolding system memory**.
 
-> “What happens when small changes keep adding up over time?”
+## Systems Studied
 
-In systems:
-- Velocity integrated over time gives position
-- Biases and offsets accumulate
-- Integrals never forget the past
+### 1. First-Order System
 
-This is why integrals eliminate steady-state error, but also why they can cause drift or windup.
+$$
+\dot{x}(t) = -a x(t)
+$$
 
-## What I Implemented
+- Models exponential decay
+- System behavior depends only on the current state
+- Common in thermal systems, RC circuits, and simple damping models
 
-A single Python script that demonstrates both concepts numerically:
+**Key behavior**
+- Monotonic decay
+- No oscillations
+- Asymptotically stable
 
-1. **Numerical differentiation**
-   - Uses `numpy.gradient` to compute `dx/dt`
-   - Shows how derivatives respond immediately to signal changes
+### 2. Second-Order System
 
-2. **Numerical integration (Euler method)**
-   - Integrates a velocity signal to recover position
-   - Includes a constant bias to explicitly show drift
+$$
+\ddot{x}(t) + 2\zeta\omega_n \dot{x}(t) + \omega_n^2 x(t) = 0
+$$
 
-All computations are done numerically, reflecting how real simulators and control systems operate.
+- Represents mechanical systems with inertia
+- Captures position and velocity as system memory
+- Foundation of mass–spring–damper and robotic dynamics
 
-## Mathematical Form (Minimal)
+**Key behavior**
+- Oscillatory response for low damping
+- Energy gradually dissipates
+- Stability governed by damping ratio and natural frequency
 
-Numerical derivative (conceptual): $dx/dt ≈ (x[k+1] − x[k]) / Δt$
+## Numerical Simulation
 
-Euler integration: $x[k+1] = x[k] + x_dot[k] · Δt$
+Closed-form solutions are not always practical for real systems.
+Instead, numerical integration is used to simulate system evolution.
 
-## Files
+**Method used**
+- Explicit Euler (first-order system)
+- Semi-implicit Euler (second-order system for improved stability)
+
+This approach mirrors how real simulators propagate dynamics step-by-step.
+
+## Folder Structure
 
 ```
-day02/
-├── numerical_calculus.py
-├── README.md
-└── results/
-    ├── 01_signal_and_derivative.png
-    └── 02_velocity_and_position_integral.png
+day03_differential_equations/
+├── ode_dynamics.py
+├── results/
+│   ├── first_order_response.png
+│   └── second_order_response.png
+└── README.md
 ```
 
-## Results & Observations
+## Results
 
-### Derivative plot
-- The derivative is a cosine-like signal shifted upward due to the linear trend in `x(t)`
-- Confirms that derivatives amplify change and react instantly
+### First-Order System
+- Smooth exponential decay
+- No numerical instability
+- Confirms expected analytical behavior
 
-### Integral plot
-- The integrated position shows oscillations plus a steady upward drift
-- The drift is caused by a constant bias in velocity
-- Demonstrates that integrals act as **memory** and accumulate even small offsets
+### Second-Order System
+- Underdamped oscillations
+- Gradual amplitude decay
+- Physically consistent phase and frequency
 
-## Key Takeaways
+Both simulations confirm that the numerical integration
+faithfully captures the underlying system dynamics.
 
-- Derivatives describe **how fast** a system is changing
-- Integrals describe **how much history** a system carries
-- Numerical calculus is how real-world simulations actually work
-- Bias + integration = drift (always)
+## Takeaway
 
-## How to Run
+Differential equations are the **language of dynamics**.
 
-```bash
-python numerical_calculus.py
-```
+They form the backbone of:
+- system modeling
+- control design
+- state estimation
+- robotics and autonomous systems
 
-Plots are saved automatically to the `results/` directory.
+From this point onward, every system will be understood
+as a state evolving under differential constraints.
 
 ---
