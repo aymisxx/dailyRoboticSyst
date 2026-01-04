@@ -47,7 +47,7 @@ Low variance does **not** imply correctness: only consistency.
 
 Covariance measures how two signals vary together:
 
-Cov(x, y) = E[(x − μₓ)(y − μᵧ)]
+$Cov(x, y) = E[(x − μₓ)(y − μᵧ)]$
 
 Interpretation:
 - Positive covariance → signals increase together
