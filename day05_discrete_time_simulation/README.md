@@ -1,8 +1,7 @@
 # Day 5: Discrete-Time Systems & Simulation
 
 **Focus:**  
-How continuous-time dynamics behave when simulated in discrete time,  
-and why numerical stability is *not* guaranteed by physical stability.
+How continuous-time dynamics behave when simulated in discrete time, and why numerical stability is *not* guaranteed by physical stability.
 
 This day marks the transition from “solving equations” to **building simulators**.
 
@@ -36,8 +35,7 @@ $$
 x_{k+1} = x_k + dt \cdot (-a x_k) = (1 - a\,dt)\,x_k
 $$
 
-This yields a discrete-time linear system whose stability depends on the
-discrete-time eigenvalue:
+This yields a discrete-time linear system whose stability depends on the discrete-time eigenvalue:
 
 $$
 \lambda_d = 1 - a\,dt
@@ -84,8 +82,7 @@ Result:
 
 > A system can be **physically stable** but **numerically unstable**.
 
-Discretization method and time step selection are **modeling choices**,  
-not implementation details.
+Discretization method and time step selection are **modeling choices**, not implementation details.
 
 This distinction is fundamental for:
 - Simulation
@@ -106,7 +103,6 @@ day05_discrete_time_simulation/
 
 Numerical methods do not merely approximate dynamics, they **shape system behavior**.
 
-Understanding this early prevents silent failures later in
-control, estimation, and learning-based robotic systems.
+Understanding this early prevents silent failures later in control, estimation, and learning-based robotic systems.
 
 ---
