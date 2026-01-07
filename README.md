@@ -22,10 +22,10 @@ This repo exists to:
 Each folder corresponds to **one day**.
 
 ```
-dayXX/
+dayXX_topic_name/
 ├── README.md        # what I tried, what I learned, what broke
-├── demo.py          # minimal runnable code or simulation (optional)
-└── notebook.ipynb   # main learning artifact with explanations + code
+├── results/         # output (visual or csv)
+└── topic_name.py          # minimal runnable code or simulation (optional)
 ```
 
 Not every day will contain every file.  
@@ -46,24 +46,6 @@ Over time, this repo touches:
 - Real-world constraints and safety thinking.
 
 Depth increases naturally. There is no fixed syllabus.
-
-## Notebook policy
-
-Notebooks are a **first-class learning artifact** in this repo.
-
-Each daily notebook:
-- contains **clear markdown explanations** of the concept.
-- includes **clean, readable code cells**.
-- documents assumptions, observations, and results.
-- prioritizes understanding over optimization.
-
-When useful, supporting `.py` files may be added for reuse or clarity,  
-but the notebook remains the primary place where learning is expressed.
-
-Notebooks are expected to be:
-- readable top-to-bottom.
-- concept-driven, not cell-order hacks.
-- presentable to a technically literate reader.
 
 ## Rules I follow
 
