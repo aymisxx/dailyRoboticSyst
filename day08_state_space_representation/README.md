@@ -107,11 +107,12 @@ State-space is the **native language of robotics systems**.
 
 ## Folder Structure
 
-state_space_msd.py          # simulation code  
-results/  
-- zero_input_states.png  
-- step_input_states.png  
-- step_input_u.png  
+day08_state_space_representation
+├── state_space_msd.py    # simulation code
+└── results
+    ├── zero_input_states.png
+    ├── step_input_states.png
+    └── step_input_u.png
 
 ## Today's Learning
 
