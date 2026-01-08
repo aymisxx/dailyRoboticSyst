@@ -105,15 +105,6 @@ The steady-state shift demonstrates how **inputs directly influence state trajec
 
 State-space is the **native language of robotics systems**.
 
-## Folder Structure
-
-day08_state_space_representation
-├── state_space_msd.py    # simulation code
-└── results
-    ├── zero_input_states.png
-    ├── step_input_states.png
-    └── step_input_u.png
-
 ## Today's Learning
 
 A system is not defined by its output alone, it is defined by the *state that remembers the past*.
