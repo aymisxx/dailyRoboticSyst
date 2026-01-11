@@ -94,15 +94,9 @@ $$
 
 Discrete-time eigenvalues:
 
-- **ZOH**:
-$$
-\lambda_d = 0.995219 \pm j0.039630
-$$
+- **ZOH**: $\lambda_d = 0.995219 \pm j0.039630$
 
-- **Euler**:
-$$
-\lambda_d = 0.996000 \pm j0.039799
-$$
+- **Euler**: $\lambda_d = 0.996000 \pm j0.039799$
 
 All discrete eigenvalues lie **inside the unit circle**, confirming discrete-time stability.
 
