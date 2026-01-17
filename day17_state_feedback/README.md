@@ -15,20 +15,9 @@ Yes. That’s state feedback.
 ## System Description
 We consider a classic **mass-spring-damper (MSD)** system with force input:
 
-$$
-x =
-\begin{bmatrix}
-x_1 \\ x_2
-\end{bmatrix}
-=
-\begin{bmatrix}
-\text{position} \\ \text{velocity}
-\end{bmatrix}
-$$
+$$x =\begin{bmatrix} x_1 \\ x_2 \end{bmatrix} = \begin{bmatrix} \text{position} \\ \text{velocity} \end{bmatrix}$$
 
-$$
-\dot{x} = Ax + Bu
-$$
+$$ \dot{x} = Ax + Bu $$
 
 where:
 
