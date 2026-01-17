@@ -23,8 +23,8 @@ Each folder corresponds to **one day**.
 
 ```
 dayXX_topic_name/
-├── README.md        # what I tried, what I learned, what broke
-├── results/         # output (visual or csv)
+├── README.md              # what I tried, what I learned, what broke
+├── results/               # output (visual or csv)
 └── topic_name.py          # minimal runnable code or simulation (optional)
 ```
 
