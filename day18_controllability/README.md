@@ -51,7 +51,7 @@ As an additional verification, the **Popov–Belevitch–Hautus (PBH) test** is 
 A system $(A,B)$ is controllable **iff** for every eigenvalue $\lambda$ of $A$:
 
 $$
-\text{rank}([\lambda I - A \; B]) = n
+\text{rank}([\lambda I - A  B]) = n
 $$
 
 Both Kalman rank and PBH tests are implemented.
