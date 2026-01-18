@@ -1,0 +1,39 @@
+Day 18: Controllability Report
+========================================
+
+System 1 (controllable)
+-----------------------
+A =
+[[ 0.   1. ]
+ [-2.  -0.7]]
+B =
+[[0.]
+ [1.]]
+Controllability matrix C=[B AB ...] =
+[[ 0.   1. ]
+ [ 1.  -0.7]]
+Rank(C) = 2 (n=2)
+Kalman rank test: CONTROLLABLE ✅
+PBH test:         CONTROLLABLE ✅
+PBH eigenvalue ranks (rank([λI-A, B])):
+  λ=-0.35+1.37022j  rank=2
+  λ=-0.35+-1.37022j  rank=2
+
+System 2 (NOT controllable)
+---------------------------
+A =
+[[0. 1.]
+ [0. 0.]]
+B =
+[[1.]
+ [0.]]
+Controllability matrix C=[B AB ...] =
+[[1. 0.]
+ [0. 0.]]
+Rank(C) = 1 (n=2)
+Kalman rank test: NOT controllable ❌
+PBH test:         NOT controllable ❌
+PBH eigenvalue ranks (rank([λI-A, B])):
+  λ=             0  rank=1
+  λ=             0  rank=1
+
