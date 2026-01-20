@@ -1,0 +1,58 @@
+{
+  "msd_params": {
+    "m": 1.0,
+    "c": 0.8,
+    "k": 4.0
+  },
+  "pid_params": {
+    "kp": 18.0,
+    "ki": 8.0,
+    "kd": 3.0,
+    "kaw": 15.0
+  },
+  "sim_params": {
+    "dt": 0.001,
+    "T": 6.0,
+    "x0": 0.0,
+    "v0": 0.0,
+    "umin": -6.0,
+    "umax": 6.0,
+    "r_step": 1.0,
+    "r_time": 0.2
+  },
+  "metrics": {
+    "IDEAL (no sat)": {
+      "peak_position": 1.1631927107724995,
+      "peak_abs_error": 1.0,
+      "overshoot_percent": 16.31927107724995,
+      "rise_time_s": 0.27,
+      "settling_time_s": NaN,
+      "control_energy_int_u2_dt": 9193.605648290633,
+      "u_max": 3018.008,
+      "u_min": -3.8070477849384656,
+      "time_at_saturation_frac": 0.007998666888851858
+    },
+    "SAT (windup)": {
+      "peak_position": 1.1527805687265331,
+      "peak_abs_error": 1.0,
+      "overshoot_percent": 15.278056872653313,
+      "rise_time_s": 0.46599999999999997,
+      "settling_time_s": 3.692,
+      "control_energy_int_u2_dt": 93.99195056654268,
+      "u_max": 6.0,
+      "u_min": -0.6624860475697933,
+      "time_at_saturation_frac": 0.07482086318946843
+    },
+    "SAT + AW (fixed)": {
+      "peak_position": 0.8270105100574876,
+      "peak_abs_error": 1.428236343250707,
+      "overshoot_percent": -17.29894899425124,
+      "rise_time_s": NaN,
+      "settling_time_s": NaN,
+      "control_energy_int_u2_dt": 35.708678293055215,
+      "u_max": 6.0,
+      "u_min": -6.0,
+      "time_at_saturation_frac": 0.025829028495250792
+    }
+  }
+}
