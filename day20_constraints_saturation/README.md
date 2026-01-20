@@ -16,9 +16,9 @@ We study how **actuator saturation** and **integrator windup** fundamentally cha
 - Observe **integrator windup** in saturated systems
 - Apply **anti-windup (back-calculation)** and study its consequences
 - Compare three regimes:
-  1. Ideal (no limits)
-  2. Saturated with windup
-  3. Saturated with anti-windup
+  1. Ideal (no limits).
+  2. Saturated with windup.
+  3. Saturated with anti-windup.
 
 ## Core Concept
 
@@ -116,31 +116,31 @@ This prevents integrator drift, **but does not guarantee good tracking**.
 
 ### Case 1: IDEAL (No Saturation)
 
-- Control input spikes to **~3000**
-- Fast response
-- Low settling time
-- Astronomical control energy
+- Control input spikes to **~3000**.
+- Fast response.
+- Low settling time.
+- Astronomical control energy.
 
 **Key insight:**  
 Ideal control is mathematically elegant and physically impossible.
 
 ### Case 2: SAT (Windup)
 
-- Actuator clamps at ±6
-- Integrator continues accumulating
-- Overshoot + long tail
-- Much lower control energy
-- Eventually settles
+- Actuator clamps at ±6.
+- Integrator continues accumulating.
+- Overshoot + long tail.
+- Much lower control energy.
+- Eventually settles.
 
 **This is textbook integrator windup.**
 
 ### Case 3: SAT + Anti-Windup
 
-- Integrator no longer lies
-- Control effort remains bounded
-- System becomes conservative
-- Reference is **never reached**
-- Rise time and settling time become undefined
+- Integrator no longer lies.
+- Control effort remains bounded.
+- System becomes conservative.
+- Reference is **never reached**.
+- Rise time and settling time become undefined.
 
 **This is not a bug. This is honesty.**
 
@@ -161,9 +161,9 @@ The controller obeys constraints *even if it means failing the task*.
 ### Negative dip in anti-windup response
 
 Early saturation forces:
-- Back-calculation pushes integrator negative
-- When error reduces, integral term briefly dominates
-- Controller pushes in the opposite direction
+- Back-calculation pushes integrator negative.
+- When error reduces, integral term briefly dominates.
+- Controller pushes in the opposite direction.
 
 This is **constraint-consistent behavior**, not instability.
 
@@ -180,17 +180,17 @@ There is **no free lunch**.
 ## Why This Matters
 
 This experiment explains why:
-- PID tuning alone is insufficient
-- LQR fails under hard limits
-- Real robots require constraint-aware control
-- **Model Predictive Control (MPC)** exists
+- PID tuning alone is insufficient.
+- LQR fails under hard limits.
+- Real robots require constraint-aware control.
+- **Model Predictive Control (MPC)** exists.
 
 ## Conclusion
 
-- Actuator saturation fundamentally changes system behavior
-- Integrator windup is unavoidable without protection
-- Anti-windup ensures internal consistency, not performance
-- Constraint-aware planning is mandatory for real systems
+- Actuator saturation fundamentally changes system behavior.
+- Integrator windup is unavoidable without protection.
+- Anti-windup ensures internal consistency, not performance.
+- Constraint-aware planning is mandatory for real systems.
 
 > **Control is not about doing what you want.  
 > Control is about doing what is allowed.**
