@@ -32,14 +32,14 @@ The goal is **intuition**, not filtering.
 A 1-D “true” motion signal is observed by multiple sensor models, each introducing a different failure mode:
 
 ### Sensor types
-- **White noise** — baseline Gaussian corruption  
-- **Bias + noise** — constant offset error  
-- **Drift (random walk)** — slow accumulating error (IMU-style)  
-- **Quantization** — limited ADC resolution  
-- **Latency** — delayed but otherwise clean measurements  
-- **Dropouts** — missing samples (NaNs)  
-- **Outliers** — rare but catastrophic spikes  
-- **Combo sensor** — realistic mix of all the above
+- **White noise** - baseline Gaussian corruption  
+- **Bias + noise** - constant offset error  
+- **Drift (random walk)** - slow accumulating error (IMU-style)  
+- **Quantization** - limited ADC resolution  
+- **Latency** - delayed but otherwise clean measurements  
+- **Dropouts** - missing samples (NaNs)  
+- **Outliers** - rare but catastrophic spikes  
+- **Combo sensor** - realistic mix of all the above
 
 Each sensor is evaluated visually and statistically.
 
