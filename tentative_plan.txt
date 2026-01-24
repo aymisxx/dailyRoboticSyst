@@ -1,0 +1,205 @@
+dailyRoboticSyst - 90 Day Curriculum
+====================================
+
+This is a systems-first, concept-heavy revision of a full MS in
+Robotics & Autonomous Systems, excluding Control & Optimal Control
+(which are already completed in Days 1-20 and dailyPyCtrlSyst).
+
+The goal is coherence, not coverage.
+The goal is engineering judgement, not syllabus completion.
+
+
+PHASE 0: Math + Python Core (Days 1-5)
+-------------------------------------
+
+Day 1 - Linear algebra for systems
+- Vectors as states
+- Matrices as dynamics
+- Eigenvalues as behavior indicators
+- Python: NumPy vectors, matrix ops, eigenvalues
+
+Day 2 - Calculus for dynamics
+- Derivatives as rates of change
+- Integrals as accumulation
+- ODE intuition
+- Python: numerical differentiation & integration
+
+Day 3 - Differential equations
+- First-order vs second-order ODEs
+- Physical interpretation
+- Python: numerical ODE solving
+
+Day 4 - Probability & statistics
+- Mean, variance, covariance
+- Noise as a feature, not a bug
+- Python: sampling, histograms, Gaussian distributions
+
+Day 5 - Discrete time & simulation
+- Continuous to discrete systems
+- Time steps and numerical stability
+- Python: minimal simulator loop
+
+
+PHASE 1: System Modeling (Days 6-12)
+------------------------------------
+
+Day 6 - What is a dynamical system?
+- State, input, output
+- Memory in systems
+
+Day 7 - Physical modeling
+- Mass-spring-damper
+- Energy-based intuition
+
+Day 8 - State-space representation
+- Why state-space dominates robotics
+
+Day 9 - Linearization
+- Nonlinear reality
+- Local linear truth
+
+Day 10 - Stability
+- Eigenvalues as system destiny
+
+Day 11 - Discretization
+- Sampling effects
+- Aliasing intuition
+
+Day 12 - Modeling errors
+- Parameter uncertainty
+- Why models lie
+
+
+PHASE 2: Control (Days 13-22)  [CORE COMPLETE]
+----------------------------------------------
+
+Day 13 - Feedback
+Day 14 - Proportional control (P)
+Day 15 - Integral & Derivative control (PI / PD)
+Day 16 - Full PID
+Day 17 - State feedback
+Day 18 - Controllability
+Day 19 - Linear Quadratic Regulator (LQR)
+Day 20 - Constraints & actuator saturation
+Day 21 - Why Model Predictive Control (MPC) exists
+Day 22 - Control failure modes
+
+After Day 22, control should feel intuitive, not procedural.
+
+
+PHASE 3: Estimation & Uncertainty (FAST TRACK) (Days 23-30)
+-----------------------------------------------------------
+
+Day 23 - Sensors and noise
+Day 24 - Probabilistic thinking for robotics
+Day 25 - Bayesian estimation intuition
+Day 26 - Kalman filter (scalar)
+Day 27 - Kalman filter (vector)
+Day 28 - Covariance as geometry
+Day 29 - Extended Kalman Filter (EKF)
+Day 30 - When EKF fails + estimation vs control
+
+Goal: comfort with uncertainty, not derivations.
+
+
+PHASE 4: Perception as a System (ROS2 + Gazebo) (Days 31-45)
+------------------------------------------------------------
+
+Day 31 - What perception really is (systems view)
+Day 32 - Measurement models in robotics
+Day 33 - Cameras in ROS2 (data, noise, rates)
+Day 34 - IMU intuition & integration
+Day 35 - TF trees and coordinate consistency
+Day 36 - Time, latency, synchronization
+Day 37 - Sensor fusion as system design
+Day 38 - Perception uncertainty & failure modes
+Day 39 - Gazebo sensors vs real sensors
+Day 40 - Simulation-reality gap
+Day 41 - Perception & control coupling
+Day 42 - Debugging broken perception stacks
+Day 43 - Active perception intuition
+Day 44 - ROS2 perception pipelines (conceptual)
+Day 45 - Perception as a bottleneck, not magic
+
+No CV magic. Only signals, models, and failure.
+
+
+PHASE 5: Reinforcement Learning (REVISION) (Days 46-47)
+-------------------------------------------------------
+
+Day 46 - RL algorithms recap
+- DQN vs PPO vs A2C
+- Where RL fits, where it fails
+
+Day 47 - RL vs control
+- Reward shaping vs cost design
+- Stability vs performance
+- Why RL is not a control replacement
+
+
+PHASE 6: Multi-Robot Systems (REVISION) (Days 48-51)
+----------------------------------------------------
+
+Day 48 - Multi-agent problem framing
+Day 49 - Consensus and decentralization
+Day 50 - Communication limits & scalability
+Day 51 - Learning in multi-robot systems
+
+Focus: when centralization breaks, when learning helps.
+
+
+PHASE 7: ROS2 + Real Systems Thinking (Days 52-75)
+--------------------------------------------------
+
+Day 52 - Why ROS2 exists
+Day 53 - Nodes, topics, services (systems view)
+Day 54 - Distributed systems intuition
+Day 55 - Timing, latency, synchronization
+Day 56 - Message drops & race conditions
+Day 57 - Simulation vs real robots
+Day 58 - Hardware constraints (Jetson-class thinking)
+Day 59 - Safety & fault tolerance
+Day 60 - Debugging philosophy for robots
+Day 61 - Logging, metrics, introspection
+Day 62 - Failure analysis in autonomy stacks
+Day 63 - Designing for observability
+Day 64 - Robustness vs performance
+Day 65 - System integration mindset
+Day 66 - Why real robots fail demos
+Day 67 - Autonomy stack decomposition
+Day 68 - Testing strategies
+Day 69 - Validation vs verification
+Day 70 - Engineering tradeoffs
+Day 71 - Design under uncertainty
+Day 72 - Explainability in robotic systems
+Day 73 - Industry expectations
+Day 74 - From research code to product
+Day 75 - Systems maturity checkpoint
+
+
+PHASE 8: Integration & Identity (Days 76-90)
+--------------------------------------------
+
+Day 76 - Control + estimation + perception loop
+Day 77 - Planning-control interaction
+Day 78 - Where learning belongs in the stack
+Day 79 - Failure-driven design
+Day 80 - Designing a full robot system (conceptual)
+Day 81 - Portfolio coherence
+Day 82 - Explaining projects to recruiters
+Day 83 - Explaining systems to non-technical people
+Day 84 - Tradeoffs you now understand
+Day 85 - What kind of robotics engineer you are
+Day 86 - Strengths and boundaries
+Day 87 - System design philosophy
+Day 88 - Career alignment reflection
+Day 89 - Final integration
+Day 90 - Capstone systems reflection
+
+End state:
+- Systems thinking
+- Control-first intuition
+- Comfort with uncertainty
+- Clear engineering identity
+
+==============================================
