@@ -51,9 +51,7 @@ A range sensor measuring distance from the origin reports:
 
 $$z = sqrt(x² + y²) + v$$
 
-Where:
-
-- `v ~ N(0, σ²)`
+Where: `v ~ N(0, σ²)`
 
 ### Key observations
 
