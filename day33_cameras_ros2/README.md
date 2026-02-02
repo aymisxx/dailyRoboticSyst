@@ -212,6 +212,6 @@ Judgment comes first.
 - Non-ideal system behavior was observed and documented.
 - Evidence was captured honestly and reproducibly.
 
-**Day 33 complete.**.
+**Day 33 complete.**
 
 ---
