@@ -1,4 +1,4 @@
-# Day 33: Cameras in ROS2: **Data, Noise, and Rates**
+# Day 33: Cameras in ROS2 - **Data, Noise, Rates**
 
 This day focuses on understanding **cameras as system components**, not as computer-vision magic.
 
