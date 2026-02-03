@@ -43,10 +43,7 @@ Even a small constant bias produces **linearly growing orientation error**.
 
 The accelerometer measures **specific force**, not velocity or position:
 
-$$
-\mathbf{a}_{\text{meas}}^{\text{body}} = \mathbf{R}^T(\theta)\,\mathbf{g}
-+ \mathbf{b}_a + \mathbf{n}_a
-$$
+$$\mathbf{a}_{\text{meas}}^{\text{body}} = \mathbf{R}^T(\theta)\,\mathbf{g} + \mathbf{b}_a + \mathbf{n}_a$$
 
 Where:
 - $\mathbf{g} = [0, g]^T$ is gravity.
@@ -60,11 +57,7 @@ At rest, the accelerometer primarily measures gravity.
 
 To obtain linear acceleration in the world frame, gravity is subtracted:
 
-$$
-\mathbf{a}_{\text{lin}}^{\text{world}} =
-\mathbf{R}(\hat{\theta})\,\mathbf{a}_{\text{meas}}^{\text{body}}
-- \mathbf{g}
-$$
+$$\mathbf{a}_{\text{lin}}^{\text{world}} = \mathbf{R}(\hat{\theta})\,\mathbf{a}_{\text{meas}}^{\text{body}} - \mathbf{g}$$
 
 If the orientation estimate $\hat{\theta}$ is wrong:
 
@@ -74,9 +67,7 @@ If the orientation estimate $\hat{\theta}$ is wrong:
 
 Approximate effect:
 
-$$
-a_x \approx g \sin(\tilde{\theta})
-$$
+$$a_x \approx g \sin(\tilde{\theta})$$
 
 where $\tilde{\theta}$ is the orientation error.
 
@@ -84,13 +75,9 @@ where $\tilde{\theta}$ is the orientation error.
 
 Linear acceleration is integrated naively:
 
-$$
-\mathbf{v}(t) = \int \mathbf{a}_{\text{lin}}(t)\, dt
-$$
+$$\mathbf{v}(t) = \int \mathbf{a}_{\text{lin}}(t)\, dt$$
 
-$$
-\mathbf{p}(t) = \int \mathbf{v}(t)\, dt
-$$
+$$\mathbf{p}(t) = \int \mathbf{v}(t)\, dt$$
 
 Any bias or persistent error results in **quadratic position growth**.
 
